@@ -1,12 +1,4 @@
-/* ==========================================================================
-   Brenda & Edivaldo — Convite de Casamento — script.js
-   Funciona tanto na página do envelope (index.html) quanto na do convite
-   (convite.html). Cada bloco só roda se os elementos existirem na página.
-   ========================================================================== */
 
-/* ---------- 1. LINK DA LISTA DE PRESENTES -----------------------------
-   Troque a URL abaixo pelo link real assim que vocês tiverem (Casas Bahia,
-   Amazon, lista própria, etc). Por enquanto aponta para a seção de infos. */
 const LINK_LISTA_DE_PRESENTES = "#"; // <-- coloque aqui o link da lista
 
 /* ---------- 2. ENVELOPE (index.html) ----------------------------------- */
@@ -34,7 +26,7 @@ const LINK_LISTA_DE_PRESENTES = "#"; // <-- coloque aqui o link da lista
     }, 1750);
   });
 
-  // também permite abrir com Enter/Espaço (já é <button>, mas reforça o foco)
+  
   envelope.addEventListener("keyup", (evento) => {
     if (evento.key === "Enter" || evento.key === " ") {
       envelope.click();
@@ -42,7 +34,7 @@ const LINK_LISTA_DE_PRESENTES = "#"; // <-- coloque aqui o link da lista
   });
 })();
 
-/* ---------- 3. CONTAGEM REGRESSIVA (convite.html) ----------------------- */
+/* --3. CONTAGEM REGRESSIVA (convite.html) ------ */
 (function configurarContagem() {
   const elDias = document.getElementById("num-dias");
   const elHoras = document.getElementById("num-horas");
@@ -85,14 +77,14 @@ const LINK_LISTA_DE_PRESENTES = "#"; // <-- coloque aqui o link da lista
   const intervalo = setInterval(atualizar, 1000);
 })();
 
-/* ---------- 4. LINK DA LISTA DE PRESENTES (convite.html) ---------------- */
+/* ---- 4. LINK DA LISTA DE PRESENTES (convite.html) ----- */
 (function configurarLinkPresentes() {
   const link = document.getElementById("link-presentes");
   if (!link) return;
   link.href = LINK_LISTA_DE_PRESENTES;
 })();
 
-/* ---------- 5. REVELAR SEÇÕES AO ROLAR (convite.html) ------------------- */
+/* ---- 5. REVELAR SEÇÕES AO ROLAR (convite.html) ----- */
 (function configurarRevelarAoRolar() {
   const alvos = document.querySelectorAll(
     ".secao-mensagem, .secao-galeria, .secao-infos, .rodape"
