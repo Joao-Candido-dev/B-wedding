@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Italianno&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Italianno&family=Montserrat:wght@400;500;600&display=swap');
 
 :root {
   /* cor */
@@ -16,7 +16,7 @@
 
   /* tipografia */
   --fonte-script: 'Italianno', cursive;
-  --fonte-serif: 'Cormorant Garamond', serif;
+  --fonte-serif: 'Lora', serif;
   --fonte-utilitaria: 'Montserrat', sans-serif;
 
   /* outros */
@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 113%;
 }
 
 body {
