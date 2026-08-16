@@ -1,5 +1,5 @@
 
-const LINK_LISTA_DE_PRESENTES = "#"; // <-- coloque aqui o link da lista
+const LINK_LISTA_DE_PRESENTES = "https://noivos.casar.com/brenda-e-edivaldo19-12-2026";
 
 /* ---------- 2. ENVELOPE (index.html) ----------------------------------- */
 (function configurarEnvelope() {
